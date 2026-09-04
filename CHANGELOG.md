@@ -1,0 +1,469 @@
+# Changelog
+
+
+## 2026-02
+
+- feat: rich click popup on directory map + fix layout height
+- fix: accurate alumni count and improved fallback coordinates
+- fix: show all alumni with any location field on the map
+- fix: location filter now handles comma-separated location strings
+- fix: hover tooltip styling, rotation stop on zoom, view-all URL
+- fix: map init effect missed when container not yet in DOM
+- fix: resolve map markers not rendering due to timing race condition
+- feat: rewrite AlumniMapFixed with native Mapbox clustering
+- feat: rewrite DirectoryMap with native Mapbox clustering and geocode caching
+- fix: resolve temporal dead zone error in BusinessDirectory
+
+## 2026-01
+
+- fix: resolve temporal dead zone error in AlumniDirectory
+- chore: complete v2.0 milestone
+- docs(phase-16): complete mobile-polish phase
+- docs(16-01): complete mobile-responsive directory layout plan
+- fix(16-01): polish mobile touch targets and styling
+- feat(16-01): add mobile sync behavior to BusinessDirectory
+- feat(16-01): add mobile sync behavior to AlumniDirectory
+- feat(16-01): add mobile drawer pattern to DirectoryLayout
+- feat(16-01): create useMediaQuery hook for viewport detection
+- docs(phase-15): complete Two-Way Sync phase
+- docs(15-01): complete Two-Way Card-Map Synchronization plan
+- feat(15-01): wire up BusinessDirectory selection state
+- feat(15-01): wire up AlumniDirectory selection state
+- feat(15-01): add selection props to BusinessCard
+- feat(15-01): add selection props to AlumniCard
+- docs(14): complete split-view layout phase
+- docs(14): add plan summaries for split-view layout
+- feat(14-04): integrate split-view layout into BusinessDirectory
+- feat(14-04): integrate split-view layout into AlumniDirectory
+- feat(14-04): enhance BusinessCard with location at zoom level 3
+- feat(14-04): enhance AlumniCard with bio snippet and location at zoom level 3
+- feat(14-03): create DirectoryMap component with clustering
+- feat(14-02): create FilterPills component with era helpers
+- feat(14-01): create DirectoryLayout split-view component
+- feat(14-01): create useLocalStorage hook
+- docs(13): complete Landing Page phase
+- docs(13): add plan summaries for landing page phase
+- feat(13-02): integrate useLandingStats hook in Index page
+- feat(13-02): integrate LandingStatsConfig in admin settings
+- feat(13-02): add LandingStatsConfig admin component
+- feat(13-02): add useLandingStats hook for fetching stats
+- feat(13-02): add site_settings table migration
+- feat(13-01): integrate landing components in Index page
+- feat(13-01): add HeroSection component with dual CTAs
+- feat(13-01): add StatsSection component with responsive grid
+- feat(13-01): add StatsCard component with count-up animation
+- feat(13-01): add useCountUp hook for animated numbers
+- docs: create v2.0 roadmap (4 phases)
+- docs: define v2.0 requirements and research
+- docs: complete v2.0 project research
+- docs: start milestone v2.0 Landing Page & Directory Redesign
+- chore: archive v1.2 milestone
+- chore: complete v1.2 milestone
+- docs(12): complete business-management phase
+- docs(12-02): complete business data table and integration plan
+- feat(12-02): integrate business management into admin dashboard
+- feat(12-02): add business row actions and data table components
+- docs(12-01): complete business data hook and filters plan
+- feat(12-01): add business data hook and filters infrastructure
+- docs(11): complete alumni-management phase
+- docs(11-02): complete alumni data table and integration plan
+- feat(11-02): integrate alumni management into AdminDashboard
+- feat(11-02): create AlumniDataTable component
+- feat(11-02): create AlumniRowActions component
+- docs(11-01): complete alumni data hook and filters plan
+- feat(11-01): create AlumniFilters component
+- feat(11-01): create useAlumniManagement hook
+- docs(10): complete dashboard-overview phase
+- docs(10-02): complete dashboard charts plan
+- feat(10-02): add charts to admin dashboard
+- feat(10-02): add useDashboardCharts hook
+- docs(10-01): complete dashboard stats infrastructure plan
+- feat(10-01): update dashboard to show weighted profile completion
+- feat(10-01): add useDashboardStats hook
+- feat(10-01): add average profile completion function
+- docs(09): complete profile-completion-infrastructure phase
+- docs(09-01): complete profile completion database function plan
+- feat(09-01): add profile completion calculation function
+- docs: create v1.2 roadmap (4 phases)
+- docs: define v1.2 requirements
+- docs: start milestone v1.2 Admin Dashboard
+- chore: complete v1.1 milestone
+- docs(08): complete business-logo-integration phase
+- docs(08-02): complete logo-display-natural-aspect-ratio plan
+- feat(08-02): update BusinessCard logos to use object-contain
+- feat(08-02): update BusinessViewEnhanced logo to use object-contain
+- docs(08-01): complete logo-cropping-aspect-ratio-presets plan
+- feat(08-01): integrate LogoCropDialog into BusinessLogoUpload
+- feat(08-01): create LogoCropDialog with aspect ratio presets
+- docs(07): complete avatar-integration phase
+- docs(07): complete avatar integration plan summaries
+- feat(07-02): add useAvatarUrl hook with photo priority logic
+- feat(07-01): add avatar edit overlay and enable cropping by default
+- feat(06-02): integrate crop dialog into ImageUpload component
+- feat(06-02): create ImageCropDialog component
+- feat(06-02): add getCroppedImg utility function
+- chore(06-02): add react-easy-crop dependency
+- feat(06-01): enhance validation messages and replace alert with toast
+- docs: create v1.1 roadmap (3 phases)
+- docs: define v1.1 requirements
+- docs: complete v1.1 photo handling research
+- docs: start milestone v1.1 Photo UX
+- fix: use RPC for admin role updates to bypass RLS
+- chore: complete v1.0 milestone
+- chore(phase-05): add completion status
+- docs(phase-05): complete privacy controls phase
+- docs(05-02): complete privacy enforcement plan
+- feat(05-02): filter hidden businesses from directory
+- feat(05-02): respect privacy settings in profile view
+- feat(05-02): update RPC functions to respect privacy settings
+- docs(05-01): complete privacy settings UI plan
+- feat(05-01): add privacy toggle switches to settings page
+- feat(05-01): add privacy columns to TypeScript types
+- feat(05-01): add privacy columns to profiles table
+- docs(04-01): complete role management plan
+- feat(04-01): add role management UI with confirmation dialogs
+- docs(phase-03): complete admin user delete phase
+- docs(03-01): complete user deletion UI plan
+- feat(03-01): add user delete button with confirmation dialog
+- docs(03-02): complete cascade deletion and audit log enhancement plan
+- feat(03-02): add user_deletion event type to security audit log
+- docs(phase-02): complete admin user search phase
+- feat(02-01): add user search to admin dashboard
+- docs(phase-1): complete UI Polish & Map Fix phase
+- docs(01): add phase 1 research
+- docs(01-02): complete mapbox verification plan
+- docs(01-01): complete logo integration plan
+- feat(01-01): add logo to mobile menu header
+- feat(01-01): add logo to desktop navigation
+- feat(01-01): add logo to public folder
+- docs: create roadmap (5 phases)
+- docs: define v1 requirements
+- chore: add project config
+- docs: initialize project
+- docs: map existing codebase
+
+## 2025-11
+
+- Replace view mode buttons with zoom slider in directories
+- Fix alumni map to exclude seed data when dev mode is off
+- Fix alumni directory grid layout and improve card consistency
+
+## 2025-10
+
+- fix: add missing LocationBadge component for ProfileView
+- fix: improve ProfileView mobile layout and badge display
+- fix: add missing /abud/ prefix to 8 navigation links across 5 files
+- feat: add Stripe integration and improve routing consistency
+- fix: add /abud/ prefix to profile links to prevent 404 errors
+- feat: add edit functionality to business and career history forms
+- fix: comment out shop imports to fix build errors
+- Update branding from 'UTP Alumni' to 'UTP ABuD'
+- refactor: remove hardcoded statistics and hide shop functionality
+- feat: add PDPA-compliant Privacy Policy and Terms of Service pages
+- feat: improve business edit page UX with better dialogs, indicators, and mobile support
+- feat: update Supabase client configuration and Edge Functions
+- chore: update project configuration and dependencies
+- feat: update page components with improved functionality
+- feat: enhance UI components and onboarding experience
+- docs: add deployment checklist and Mapbox setup guide
+- feat: add SEO component and sitemap for better search visibility
+- fix: implement comprehensive security improvements and XSS protection
+
+## 2025-09
+
+- fix: resolve messaging notification and favicon issues
+- docs: add notification testing guide
+- feat: update business intent logic in onboarding
+- feat: update profile UI and mobile detection
+- feat: add unread message tracking and badge components
+- feat: add browser notification system with manual opt-in and red dot indicators
+- fix: resolve critical metrics UI functionality issues
+- fix: redirect to dashboard after profile save instead of problematic profile route
+- fix: resolve onboarding flow and profile access issues
+- feat: enhance onboarding system with comprehensive UX improvements
+- feat: implement required vs optional onboarding steps with improved UX
+- fix: resolve onboarding redirect and add incomplete profile notifications
+- fix: resolve Vercel deployment asset serving issues with 404s and MIME type errors
+- fix: resolve Vercel deployment white screen with debugging and error handling
+- fix: fix Vercel asset serving - remove slash from negative lookahead and add explicit MIME types
+- fix: update Vercel rewrites to exclude assets - fixes MIME type error
+- fix: resolve empty page issue - fix base path mismatch and static asset paths
+- fix: update Vercel config for /abud path with auto-redirect from root
+- refactor: change application root path to /abud and fix navigation routing
+- refactor: synchronize location system to use structured fields across application
+- fix: resolve business creation loading issue
+- fix: resolve business creation navigation issue
+- fix: resolve chat infinite recursion using SECURITY DEFINER function
+- fix: completely rebuild chat RLS policies to eliminate infinite recursion
+- fix: resolve infinite recursion in conversation_participants RLS policies
+- Configure environment variables for secure Vercel deployment
+- Implement UTP ABuD icon favicons with comprehensive size variants
+- Add favicon support with PNG and ICO formats
+- Remove Lovable badge via CSS; remove empty fb:app_id; update README URL to custom domain
+- fix: aggressive cache-busting for Open Graph meta tags
+- fix: update Open Graph meta tags to remove Lovable branding
+- Updated .gitignore
+- refactor: rename project to UTP Alumni Business Directory
+- chore: remove Lovable branding and tracking
+- refactor: update all date selections to use ModernDatePicker
+- feat: add comprehensive Malaysian cities database
+- Fix RLS policies
+- Fix profile data exposure
+- Fix alumni data exposure
+- Fix public profile data exposure
+- Fix RLS for profile data
+- Fix security definer views
+- Fix security definer views
+- chore: force redeploy with version comment
+- fix: reposition map controls and add alumni search functionality
+- feat: add business markers toggle to world map
+- feat: add clickable navigation in chat interface
+- fix: replace Briefcase icon with GraduationCap for course display in chat
+- refactor: improve course name display formatting
+- docs: Add comprehensive next session prompt with workflow documentation
+- feat: Add course name formatting utility for better display
+- feat: Enhance chat UI with user profiles and improved functionality
+- Fix chat with unknown user
+- Fix chat plus button
+- Refactor business creation flow
+- Refactor: Reroute business editing
+- Fix employee count range error
+- Fix business size constraint
+- feat: Add confirmation dialog for business deletion
+- fix: User Dashboard now correctly navigates to edit profile
+- feat: Update navigation menu with User Dashboard and Edit Business options
+- Fix team member role popup and foreign key error
+- feat: Improve image upload limits and fix TS errors
+- feat: Add feature parity between Business View and Edit pages
+- docs: Update NEXT_SESSION_CONTEXT with comprehensive workflow guide
+- feat: Remove Reviews tab from business profile page
+- Fix access denied error
+- Fix: Business update failure
+- feat: Add month grid view to date picker for consistent UX
+- feat: Enhance date picker with year grid view and better UX
+- feat: Create modern custom date picker component
+- Reverted to commit 09f7fccdbfa0d6904694b924f4c850ba68d94e70
+- Refactor date picker
+- refactor: Simplify date pickers to use native HTML5 date inputs
+- feat: Improve Business Edit UI/UX
+- docs: Add comprehensive lessons learned and workflow guide
+- Fix: Import ExternalLink component
+- Fix BusinessLinksTab not showing
+- Fix BusinessLinksTab not defined error
+- Add business links and sidebar
+- Fix missing icons
+- Fix Select.Item value prop error
+- Fix: Ensure Select.Item has a value
+- Fix missing save buttons
+- Fix access denied error
+- Fix access denied and embed errors
+- Fix FK naming in business_services
+- Fix duplicate foreign keys
+- Fix duplicate foreign keys
+- Fix duplicate foreign keys
+- Add documentation for fixing duplicate foreign key constraints
+- Fix Supabase relationship errors
+- Fix duplicate FK constraint
+- Fix Supabase relationship error
+- Add foreign key constraints
+- Fix BusinessEditEnhanced component errors
+- Fix BusinessEditEnhanced database query - specify exact columns
+- Fix Business Edit routing to use enhanced version
+- Fix: Resolve business editing errors
+- Create enhanced Business Edit form with comprehensive tabbed interface
+- Fix 404 error on edit business
+- Add edit business button
+- Fix 404 on edit business
+- Implement hierarchical business categories UI
+- Add hierarchical business categories
+- Refactor header navigation layout
+- Make header navigation visible across all pages including dashboard
+- Reorganize header navigation with World Map and Messages as main items
+
+## 2025-08
+
+- Add Alumni World Map link to header navigation menu
+- Update map popup styling to match directory card design
+- Add region highlighting and aggregation to Alumni World Map search
+- Implement search functionality for Alumni World Map
+- Fix auto-rotation blocking map dragging
+- Fix map dragging restrictions and improve auto-rotation
+- Remove map dragging restrictions
+- Fix map dragging issues
+- Fix map dragging behavior
+- Fix map auto-rotate and dragging
+- Fix Alumni World Map auto-rotation to allow manual interaction
+- feat: Add auto-rotation to globe with toggle control
+- fix: Restore popup functionality on marker click
+- fix: Remove transform-based hover effects to fix marker jumping
+- fix: Resolve map marker hover animation issue
+- fix: Resolve Alumni Map issues and add map control explanations
+- Fix database issues
+- Fix: Resolve loading state issue
+- Reverted to commit 3c0ad593e930af1fb107e4ff0cb915ff371913db
+- Reverted to commit 4bdbc0cf7a8754a8cc3b17bb824726672440c40f
+- feat: Enhance business pages with modern design and comprehensive features
+- Update seed data education
+- Fix empty seed profiles
+- Add more seed data
+- Add more seed data
+- Fix FK constraints and seed data
+- Fix FK constraints and orphaned data
+- Fix foreign key constraints
+- fix: Resolve foreign key constraint issues for seed data
+- Add seed data for users
+- Fix seed data issues
+- Fix seed data issues
+- Fix seed data issues
+- Fix seed data population
+- Fix seed data population
+- Fix seed data loading errors
+- Fix Development Mode Toggle
+- Add seed users and conversations
+- Fix Development Mode Toggle errors
+- feat: Add development mode for seed data visibility
+- Update seed data to use correct UTP programme names
+- Fix seed data migration
+- Fix seed data migration
+- Fix seed data restoration
+- Restore seed data
+- Reverted to commit 339d32b13112fd82f486769032c256dd8036c986
+- Reverted to commit f9a8263a44d3b192a8059ee0f3f2327dd066f6ff
+- Reverted to commit 6f3d1277795cec8945567912689aa7c89cc6dc31
+- Fix profile view issues
+- Fix profile view display
+- Refactor education display
+- Fix overview not updating
+- Add save button to education form
+- Migrate course data
+- Refactor: Update education management components
+- Add education management components
+- Add education management system
+- Fix: Markers not appearing on map
+- Add primary business info to alumni map popup previews
+- Add country/region search with border highlighting
+- Add location search functionality to alumni map
+- Add floating navigation controls and refine popup styling
+- Fix map popups to match light theme and improve UX
+- Fix popup styling and behavior
+- Fix popup styling
+- Fix map popup styling
+- Fix map popup styling
+- Refactor popup UI
+- Fix map marker hover behavior
+- Fix map marker jitter
+- Refactor map view
+- Fix LinkedIn icon display
+- Fix: Link icon not showing
+- Make locations clickable
+- Update seed data locations
+- Make user names clickable
+- Refactor admin messages page
+- Remove "Make Admin" button and "Pending" status
+- Remove pending role assignment
+- Update verification logic
+- Refine user management in dashboard
+- Refactor location storage
+- Add country filter to locations
+- Refactor location filter
+- Fix security issues
+- Fix security issues
+- Refactor admin dashboard plan
+- feat: Implement Phase 1 admin metrics
+- Add admin panel submenus
+- Add admin dashboard for messages
+- Fix link preview generation
+- Add link preview functionality
+- Fix chat auto-scroll issue
+- Fix chat scroll behavior
+- Fix chat not updating
+- Add online status indicator
+- Add emoji support
+- Add message editing functionality
+- Fix message sending in chat
+- Fix RLS policy error
+- Fix RLS policies
+- Fix "Connect" button functionality
+- Fix security definer function
+- Add chat database tables
+- Refactor social media icons
+- Use social media icons
+- Add map marker improvements
+- Fix mapbox token retrieval
+- Add interactive map filter
+- Add interactive map filter
+- Refactor location filters
+- Add advanced filters
+- Add location to profile/business views
+- Add location data
+- Add more seed data
+- Add seed accounts to directory
+- Seed alumni accounts
+- Fix seed data verification
+- Fix directory visibility
+- Fix seed data and auth issues
+- Fix profile links and auth
+- Update RLS policies
+- Fix auth state detection
+- Add alumni role
+- Add seed data tags
+- Add seed data tags
+- Add seed data for alumni
+- Add seed data for alumni
+- Fix migration for profiles
+- Add seed data for MVP
+- Add view options for cards
+- Remove redundant directory menus
+- Adjust menu position
+- Fix profile sidebar links
+- Fix redundant "Back to" and menu links
+- Refactor profile editing UI
+- Fix profile loading error
+- Fix: Profile not found error
+- Add menu and navigation changes
+- Add user settings page
+- Add edit profile link
+- Add view profile button
+- Refactor profile edit navigation
+- Refactor profile edit navigation
+- Add contribution privacy option
+- Add contribution analytics view
+- Add contribution fields
+- Fix profile editing flow
+- Add image upload functionality
+- Fix: User not listed as member
+- Add business member management
+- Add Edit Business Page
+- Add edit business button
+- feat: Implement location autocomplete
+- Fix RLS policies for business members
+- Add foreign key constraints
+- Add clickable industries and services
+- Fix Admin Panel Data Loading
+- Add admin panel options
+- Add business team members table
+- Add business team members table
+- Refactor business owner display
+- Refactor profile page layout
+- Refactor profile view
+- Refactor career history display
+- Make business directory clickable
+- Add profile page
+- Fix empty alumni directory
+- Add admin access link
+- Add admin panel functionality
+- Fix directory loading errors
+- Add directory features
+- Refactor profile editing flow
+- Add edit onboarding functionality
+- Handle OAuth redirect
+- Fix Google OAuth redirect error
+- Fix Google OAuth errors
+- Fix GitHub OAuth 404 error
+- Fix AuthProvider useState error
+- Add profile onboarding tables
+- Fix authentication security warnings
+- Approve Supabase Migrations
+- Add UTP Alumni Business Directory
+- Connect to Supabase project
+- Use tech stack vite_react_shadcn_ts_20250728_minor

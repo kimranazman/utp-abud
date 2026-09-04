@@ -1,0 +1,96 @@
+/* Mapbox Popup Light Theme Styles */
+
+/* Remove default white background and shadow */
+.mapboxgl-popup-content {
+  background: transparent !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Style the popup tip/arrow for light theme with border */
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip {
+  border-bottom-color: #ffffff !important;
+}
+
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+  border-top-color: #ffffff !important;
+}
+
+.mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
+  border-right-color: #ffffff !important;
+}
+
+.mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
+  border-left-color: #ffffff !important;
+}
+
+.mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip {
+  border-bottom-color: #ffffff !important;
+}
+
+.mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip {
+  border-bottom-color: #ffffff !important;
+}
+
+.mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip {
+  border-top-color: #ffffff !important;
+}
+
+.mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip {
+  border-top-color: #ffffff !important;
+}
+
+/* Style the close button */
+.mapboxgl-popup-close-button {
+  color: #9ca3af !important;
+  font-size: 18px !important;
+  width: 24px !important;
+  height: 24px !important;
+  right: 12px !important;
+  top: 12px !important;
+  background: transparent !important;
+  border-radius: 4px !important;
+  border: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  line-height: 1 !important;
+  transition: all 0.15s ease !important;
+  font-weight: 400 !important;
+}
+
+.mapboxgl-popup-close-button:hover {
+  background: #f3f4f6 !important;
+  color: #6b7280 !important;
+}
+
+/* Ensure proper z-index and allow overflow */
+.mapboxgl-popup {
+  z-index: 40;
+}
+
+/* Allow popup to overflow map container */
+.mapboxgl-map {
+  overflow: visible !important;
+}
+
+.mapboxgl-canvas-container {
+  overflow: visible !important;
+}
+
+/* Ensure popup content is fully visible */
+.alumni-location-popup {
+  max-height: none !important;
+}
+
+.alumni-location-popup .mapboxgl-popup-content {
+  overflow: visible !important;
+}
+
+/* Fade-in animation for hover tooltips */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(2px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

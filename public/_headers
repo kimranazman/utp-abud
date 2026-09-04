@@ -1,0 +1,51 @@
+# Security headers for all paths
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.supabase.co https://api.utpalumni.org https://api.mapbox.com https://js.stripe.com blob:; worker-src 'self' blob:; style-src 'self' 'unsafe-inline' https://api.mapbox.com; img-src 'self' data: https: blob:; font-src 'self' data:; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://api.utpalumni.org wss://api.utpalumni.org https://api.mapbox.com https://events.mapbox.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Permissions-Policy: geolocation=(self), microphone=(), camera=(), payment=()
+
+# HTML files - no cache
+/*.html
+  Cache-Control: no-cache, no-store, must-revalidate
+  Content-Type: text/html; charset=utf-8
+
+/index.html
+  Cache-Control: no-cache, no-store, must-revalidate
+  Content-Type: text/html; charset=utf-8
+
+# JavaScript files - long cache with correct MIME type
+/assets/*.js
+  Content-Type: application/javascript; charset=utf-8
+  Cache-Control: public, max-age=31536000, immutable
+
+/abud/assets/*.js
+  Content-Type: application/javascript; charset=utf-8
+  Cache-Control: public, max-age=31536000, immutable
+
+# CSS files - long cache with correct MIME type
+/assets/*.css
+  Content-Type: text/css; charset=utf-8
+  Cache-Control: public, max-age=31536000, immutable
+
+/abud/assets/*.css
+  Content-Type: text/css; charset=utf-8
+  Cache-Control: public, max-age=31536000, immutable
+
+# Images and other assets
+/og-image.svg
+  Content-Type: image/svg+xml
+  Cache-Control: public, max-age=3600
+
+/favicon.ico
+  Content-Type: image/x-icon
+  Cache-Control: public, max-age=86400
+
+/*.png
+  Content-Type: image/png
+  Cache-Control: public, max-age=86400
+
+/*.svg
+  Content-Type: image/svg+xml
+  Cache-Control: public, max-age=86400

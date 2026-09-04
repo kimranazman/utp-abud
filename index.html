@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Security Headers (CSP and Referrer-Policy can be set via meta tags) -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.supabase.co https://api.utpalumni.org https://api.mapbox.com https://js.stripe.com blob:; worker-src 'self' blob:; style-src 'self' 'unsafe-inline' https://api.mapbox.com; img-src 'self' data: https: blob:; font-src 'self' data:; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://api.utpalumni.org wss://api.utpalumni.org https://api.mapbox.com https://events.mapbox.com; base-uri 'self'; form-action 'self';" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    <!-- Other security headers (X-Frame-Options, X-Content-Type-Options, X-XSS-Protection, Permissions-Policy) are set via HTTP headers in vercel.json and public/_headers -->
+
+    <!-- Cache Control -->
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+
+    <title>UTP ABuD</title>
+    <meta name="description" content="Discover businesses owned by UTP alumni. Connect with entrepreneurs and professionals from Universiti Teknologi PETRONAS." />
+    <meta name="author" content="UTP ABuD" />
+    <link rel="canonical" href="https://utpalumni.org/abud/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/abud/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/abud/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/abud/favicon-16x16.png" />
+    <link rel="icon" type="image/png" href="/abud/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/abud/apple-touch-icon.png" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="UTP ABuD" />
+    <meta property="og:description" content="Discover businesses owned by UTP alumni. Connect with entrepreneurs and professionals from Universiti Teknologi PETRONAS." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://utpalumni.org/abud/" />
+    <meta property="og:image" content="https://utpalumni.org/abud/og-image.svg?v=3" />
+    <meta property="og:image:secure_url" content="https://utpalumni.org/abud/og-image.svg?v=3" />
+    <meta property="og:image:type" content="image/svg+xml" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="UTP ABuD - Connect with UTP entrepreneurs" />
+    <meta property="og:site_name" content="UTP ABuD" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:updated_time" content="2025-01-03T12:00:00Z" />
+    <!-- Removed fb:app_id as it's empty and triggers Sharing Debugger warnings -->
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="UTP ABuD" />
+    <meta name="twitter:description" content="Discover businesses owned by UTP alumni. Connect with entrepreneurs and professionals from Universiti Teknologi PETRONAS." />
+    <meta name="twitter:site" content="@UTPAlumni" />
+    <meta name="twitter:image" content="https://utpalumni.org/abud/og-image.svg?v=2" />
+    <meta name="twitter:image:alt" content="UTP ABuD" />
+
+    <!-- Additional Meta Tags -->
+    <meta name="application-name" content="UTP ABuD" />
+    <meta name="apple-mobile-web-app-title" content="UTP ABuD" />
+    <meta name="theme-color" content="#1e293b" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://utpalumni.org/abud/</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Alumni Directory -->
+  <url>
+    <loc>https://utpalumni.org/abud/directory/alumni</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Business Directory -->
+  <url>
+    <loc>https://utpalumni.org/abud/directory/business</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Alumni Map -->
+  <url>
+    <loc>https://utpalumni.org/abud/directory/alumni/map</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Directory (Main) -->
+  <url>
+    <loc>https://utpalumni.org/abud/directory</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Authentication Page (public landing for sign-in) -->
+  <url>
+    <loc>https://utpalumni.org/abud/auth</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!--
+  Dynamic pages (profiles, businesses) should be generated programmatically
+  or added via a dynamic sitemap service. For now, these are the main static routes.
+
+  To add dynamic pages:
+  1. Fetch all public profiles from database
+  2. Add URLs like: https://utpalumni.org/abud/profile/{userId}
+  3. Fetch all public businesses
+  4. Add URLs like: https://utpalumni.org/abud/business/{businessId}
+  -->
+
+</urlset>
