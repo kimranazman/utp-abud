@@ -10,7 +10,7 @@ The site is made of four pieces. You need all four.
 
 | Piece | What it is | How it transfers |
 |---|---|---|
-| Website code | React (Vite) single-page app, this repository, deployed on Vercel | GitHub repository transfer |
+| Website code | React (Vite) single-page app, this repository, deployed on Vercel | Public GitHub repository, fork or clone it |
 | Database and member logins | Supabase (Postgres, Auth, REST, Storage), currently self-hosted at `api.utpalumni.org` | Database export file, provided separately and privately |
 | Uploaded images | Member avatars, business logos, banners and product photos, stored in a Supabase bucket named `images` | Included with the database export |
 | Domain and DNS | `utpalumni.org` with `www` and `api` records, managed in Cloudflare | Account-to-account transfer |
@@ -30,7 +30,7 @@ No account, server, API key or password belonging to the previous operator. Ever
 
 ### Step 0. Accounts to create first
 
-1. GitHub, to receive the repository.
+1. GitHub, to hold your own copy of the code.
 2. Supabase (https://supabase.com). The free tier covers the current size; Pro adds daily backups.
 3. Vercel (https://vercel.com). The Hobby tier is enough.
 4. Cloudflare (https://cloudflare.com). Free plan.
@@ -38,7 +38,7 @@ No account, server, API key or password belonging to the previous operator. Ever
 
 ### Step 1. Receive the code
 
-The previous operator transfers this repository to your GitHub account or organisation. You accept by email. History, branches and this document come with it.
+This repository is public. Fork it into your own GitHub account or organisation, or clone it and push it to a new repository you own. Your copy is the one you will deploy from and make changes to. Once your site is live you can keep your copy private if you prefer.
 
 ### Step 2. Receive the data export
 
