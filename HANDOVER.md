@@ -56,7 +56,7 @@ The zip contains personal data of every member. Keep it confidential and delete 
 
 ### Step 4. Deploy the website on Vercel
 
-1. Import the transferred repository as a new Vercel project. Framework is Vite; build settings are already in `vercel.json`.
+1. Import your copy of the repository as a new Vercel project. Framework is Vite; build settings are already in `vercel.json`.
 2. Set the production environment variables `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` to your project's values.
 3. Deploy and test on the temporary Vercel address: browse the directory, log in as an existing member, open a business page, upload an avatar.
 
